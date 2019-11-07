@@ -30,7 +30,7 @@ services:
     image: hydroprotocolio/hydro-scaffold-dex-web:latest
     container_name: hydro-scaffold-dex-web
     ports:
-      - 127.0.0.1:3000:8043
+      - 0.0.0.0:3000:8043
     environment:
       - CONFIG_VARS=REACT_APP_API_URL,REACT_APP_WS_URL,REACT_APP_NODE_URL,REACT_APP_HYDRO_PROXY_ADDRESS,REACT_APP_HYDRO_TOKEN_ADDRESS,REACT_APP_WETH_TOKEN_ADDRESS,REACT_APP_NETWORK_ID
       - REACT_APP_API_URL=http://localhost:3001
